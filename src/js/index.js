@@ -23,3 +23,7 @@ function mostrarMaisProjetos() {
         projetoInativo.classList.add('ativo');
     });
 }
+
+window.onload = function() {
+    document.activeElement.blur();
+};
