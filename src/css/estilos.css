@@ -7,7 +7,7 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(150deg, #000, #9e00ff);
+    background: linear-gradient(150deg, #43628b, #bbbcbc);
     background-size: 120% 120%;
 }
 
@@ -23,7 +23,8 @@ body{
     height: 65px;
     border-radius: 50%;
     border: 2px solid #fff;
-    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 400;
     text-align: center;
     line-height: 55px;
     font-family: "Raleway", sans-serif;
@@ -31,8 +32,8 @@ body{
 }
 
 .cabecalho a:hover .logo{
-    color: #9443d8;
-    border: 2px solid #9443d8;
+    color: #d5ba98;
+    border: 2px solid #d5ba98;
 }
 
 
@@ -41,10 +42,12 @@ body{
     text-transform: capitalize;
     padding: 10px 20px;
     transition: 0.2s;
+    background-color: #b4d3b2;
+    border-radius: 50px;
 }
 
 .cabecalho .menu li a:hover{
-    background-color: #9443d8;
+    background-color: #4e403b;
     color: #fff;
     border-radius: 50px;
 }
@@ -84,7 +87,7 @@ body{
 }
 
 .home .redes-sociais a i{
-    border: 1px solid #fff;
+    border: 1px solid #b4d3b2;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -92,12 +95,14 @@ body{
     text-align: center;
     font-size: 26px;
     transition: 0.3s;
+    background-color: #b4d3b2;
 }
 
 .home .redes-sociais a i:hover{
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: #fff;
+    border: 1px solid #4e403b;
     transform: scale(1.1);
+    background-color: #4e403b;
 }
 
 .home .container-foto .foto{
@@ -112,13 +117,13 @@ body{
 }
 
 .home .foto.sombra-interna {
-    background: linear-gradient(to right, #8a35c8, #18c063, #00eea2);
+    background: linear-gradient(to right, #b4d3b2, #bbbcbc, #43628b);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
 
 .projetos{
-    padding: 70px 0 70px;
+    padding: 125px 0 ;
 }
 
 .projetos .titulo{
@@ -154,7 +159,7 @@ body{
 }
 
 .projetos .projeto h3{
-    background-color: #040203;
+    background-color: #000;
     width: 100%;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -182,7 +187,7 @@ body{
 
 .projetos .btn-mostrar-projetos{
     background: none;
-    border: 1px solid #fff;
+    border: 1px solid #b4d3b2;
     border-radius: 15px;
     color: #fff;
     width: 180px;
@@ -194,15 +199,45 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: #b4d3b2;
 }
 
 .projetos .btn-mostrar-projetos:hover{
-    background-color: #9443d8;
     transition: 0.3s;
+    border: 1px solid #4e403b;
+    background-color: #4e403b;
 }
 
 .projetos .btn-mostrar-projetos.remover{
     display: none;
+}
+
+.projetos .btn-mostrar-menos{
+    background: none;
+    border: 1px solid #b4d3b2;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #b4d3b2;
+    display: none;
+}
+
+.projetos .btn-mostrar-menos:hover{
+    transition: 0.3s;
+    border: 1px solid #4e403b;
+    background-color: #4e403b;
+}
+
+.projetos .btn-mostrar-menos.aparecer{
+    display: block;
 }
 
 @keyframes gradient-animation {
